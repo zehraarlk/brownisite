@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3956/3956164.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Poppins:wght@300;500;700;900&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+   <nav class="menu-box">
+      <ul>
+          <li><a href="anasayfa.html" target="_blank">Anasayfa</a></li>
+          <li><a href="hakkimizda.html" target="_blank">Hakkımızda</a></li>
+          <li><a href="proje.html" target="_blank">Projelerimiz</a></li>
+          <li><a href="blog.html" target="_blank">Blog</a></li>
+          <li><a href="iletisim.html" target="_blank">İletişim</a></li>
+      </ul>
+  </nav>
+    <section class="iletisim2">
+       <div class="iletisim">
+          <h2>Sitemizde Olan Yeniliklerden Anında Haberdar Olmak İçin Kaydolmayı Unutmayın!</h2>
+
+          <form class="giris">
+            <label for="isim">Ad Soyad:</label>
+            <input type="text" id="isim" name="isim" required>
+            <br>
+            <label for="sifre">Şifrenizi giriniz</label>
+            <input type="password" id="sifre" name="sifre" minlength="7" maxlength="14" required>
+    
+            <button type="submit">Gönder</button>
+        </form>    
+
+        <p id="hesapYok">Henüz bir hesabınız yok mu? <a href="javascript:void(0);" onclick="gosterKayit()">Kayıt ol</a></p>
+
+          <form class="kayit" style="display:none;">
+        <input type="text" name="adsoyad" placeholder="Ad Soyad giriniz" required> 
+        <br>
+        <input type="email" name="email" placeholder="Mail adresinizi giriniz" required>
+        <br>
+        <input type="text" name="mesaj" placeholder="Mesajınızı giriniz" required>
+        <br>
+        <input type="password" name="sifre" placeholder="Şifrenizi giriniz" required>
+        <br>
+        <input type="password" name="sifre" placeholder="Şifrenizi tekrar giriniz" required>
+        <button type="submit">Gönder</button>
+        <button type="reset">Verileri Temizle</button>
+    </form>
+       </div>
+    </section>
+
+    <script>
+        function gosterKayit() {
+           document.querySelector('.kayit').style.display = 'block';
+           document.querySelector('.giris').style.display = 'none';
+           document.getElementById('hesapYok').style.display = 'none';
+        }
+     </script>
+</body>
+</html>

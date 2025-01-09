@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projelerimiz-Tariflerimiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3956/3956164.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Poppins:wght@300;500;700;900&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+    <nav class="menu-box">
+        <ul>
+            <li><a href="anasayfa.html" target="_blank">Anasayfa</a></li>
+            <li><a href="hakkimizda.html" target="_blank">Hakkımızda</a></li>
+            <li><a href="proje.html" target="_blank">Projelerimiz</a></li>
+            <li><a href="blog.html" target="_blank">Blog</a></li>
+            <li><a href="iletisim.html" target="_blank">İletişim</a></li>
+        </ul>
+    </nav>
+    <section class="tarifbolum">
+        <div class="container">
+            <div class="tarifbaslik">
+                <h1>Tariflerimiz</h1>
+            </div>
+            <div class="tarif-wrap">
+                <div class="tarif-box">
+                    <img src="https://img.ye-mek.net/img/f1/visneli-cikolatali-brownie.jpg" alt="" />
+                    <h2>Vişneli Browni</h2>
+                    <p>Vişneli browni, yoğun çikolata lezzetini vişnenin hafif ekşi tadıyla buluşturuyor. Farklı bir browni deneyimi arıyorsanız, mutlaka denemelisiniz.</p>
+                    <button class="detaylar-btn">Detaylar</button>
+                    <div class="detaylar" style="display: none;">
+                        <p>Vişneli browni tarifi için gerekli malzemeler ve adımlar: <br>
+                        - 200g bitter çikolata <br>
+                        - 100g tereyağı <br>
+                        - 2 adet yumurta <br>
+                        - 1 su bardağı şeker <br>
+                        - 1 su bardağı un <br>
+                        - Yarım su bardağı vişne <br>
+                        -Bir tutam tuz <br>
+                        Tarifi adım adım takip ederek bu lezzeti kendi mutfağınızda hazırlayabilirsiniz!</p>
+                    </div>
+                </div>
+                <div class="tarif-box">
+                    <img src="https://mutfaktaki.com/wp-content/uploads/2020/03/beyaz-cikolatali-brownie.jpeg" alt="" />
+                    <h2>Beyaz Çikolatalı Browni</h2>
+                    <p>Beyaz çikolatalı browni, klasik browniye hafif bir dokunuş katıyor. Daha yumuşak ve farklı bir tat arayanlar için ideal bir seçenek.</p>
+                    <button class="detaylar-btn">Detaylar</button>
+                    <div class="detaylar" style="display: none;">
+                        <p>Beyaz çikolatalı browni için gerekli malzemeler ve adımlar: <br>
+                        - 150g beyaz çikolata <br>
+                        - 100g tereyağı <br>
+                        - 2 yumurta <br>
+                        - 1 su bardağı şeker <br>
+                        - 1 su bardağı un <br>
+                        -Bir tutam tuz <br>
+                        Tarifi takip ederek bu yumuşacık ve farklı tatlıyı hazırlayabilirsiniz!</p>
+                    </div>
+                </div>
+                <div class="tarif-box">
+                    <img src="https://i0.wp.com/portakalagaci.com/wp-content/uploads/2022/01/DSC03044.jpg?ssl=1" alt="" />
+                    <h2>Orman Meyveli Browni</h2>
+                    <p>Yaban mersini, frambuaz gibi meyvelerle zenginleştirilmiş bu browni, yoğun çikolata lezzetini ekşi, mayhoş bir tatla sunuyor. Farklı ve ferah bir tat arayanlar için mükemmel bir tercih.</p>
+                    <button class="detaylar-btn">Detaylar</button>
+                    <div class="detaylar" style="display: none;">
+                        <p>Orman Meyveli Brownie için gerekli malzemeler ve adımlar: <br>
+                            -180g tereyağı <br>
+                            -1 su bardağı şeker <br>
+                            -3 yemek kaşığı un <br>
+                            -2 yemek kaşığı kakao <br>
+                            -4 adet yumurta <br>
+                            -240g bitter çikolata <br>
+                            - 100g yaban mersini <br>
+                            - 100g frambuaz <br>
+                        Tarifi izleyerek bu meyveli ve çikolatalı lezzeti evde hazırlayabilirsiniz!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        const detayBtns = document.querySelectorAll('.detaylar-btn');
+        detayBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const detayDiv = this.nextElementSibling; 
+                if (detayDiv.style.display === 'none' || detayDiv.style.display === '') {
+                    detayDiv.style.display = 'block'; 
+                    this.innerText = 'Detayları Gizle'; 
+                } else {
+                    detayDiv.style.display = 'none';
+                    this.innerText = 'Detaylar'; 
+                }
+            });
+        });
+    </script>
+</body>
+</html>

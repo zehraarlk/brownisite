@@ -1,0 +1,415 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.message-box {
+    background-color: #444;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 10px;
+    margin-top: 1%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    color: #444;
+    line-height: 25px;
+}
+
+.girisbolum{
+    background-color: #ededed;
+}
+
+.giris2{
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.girisbaslik h1{
+    color: #363958;
+    font-size: 50px;
+    line-height: 80px;
+    margin-bottom: 20px;
+}
+
+.videop{
+    margin-bottom: 8rem;
+    text-align: justify;
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    text-align: justify;
+
+}
+
+.anasayfa2 {  
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    padding-bottom: 50px;
+}
+
+@keyframes example {
+    from {background-color: #ededed;}
+    to {background-color: #ccc;}
+  }
+
+header,
+.anasayfa {  
+    background-color: #ededed;
+    animation-name: example;
+  animation-duration: 6s;
+}
+
+.genelbaslik {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 20%;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 20%;
+}
+
+.logo span {
+    margin-left: 5px;
+    font-size: 30px;
+    font-weight: 900;
+    color: #f83b3b;
+    font-family: "Berkshire Swash", cursive;
+}
+
+.menu-box {
+    width: 75%;
+}
+
+.menu-box ul {
+    float: right;
+}
+
+.menu-box ul li {
+    display: inline-block;
+}
+
+.menu-box ul li a {
+    text-decoration: none;
+    color: #f83b3b;
+    padding: 20px;
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+.half-width {
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro-img {
+    width: 100%;
+}
+
+.intro-img img {
+    width: 100%;
+}
+
+.tatli video{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+}
+
+.intro-wrap {
+    padding-top: 2em;
+    padding-bottom: 8em;
+    overflow: hidden;
+}
+
+
+.anasayfabaslik h1 {
+    color: #363958;
+    font-size: 70px;
+    line-height: 80px;
+    margin-bottom: 20px;
+}
+
+.anasayfabaslik span { 
+    display: block;
+}
+
+.span-color {
+    color: #f83b3b;
+}
+
+.anasayfabaslik p { 
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+
+.tatli p{
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+
+.link-button {
+    color: white;
+    text-decoration: none;
+    background-image: linear-gradient(90deg, #fc5858, crimson);
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.hakkimizda {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 80px 0;
+    background-color: #ededed;
+}
+
+.hakkimizdafoto {
+    width: 50%;
+}
+
+.hakkimizdafoto img {
+    width: 80%;
+}
+
+.hakkimizdabaslik {
+    color: #363958;
+    width: 45%;
+}
+
+.hakkimizdabaslik h2 {
+    font-size: 50px;
+    margin-bottom: 2rem;
+}
+
+.hakkimizdabaslik p {
+    margin-bottom: 8rem;
+    text-align: justify;
+}
+
+.tarifbolum{
+    background-color: #ededed;
+}
+
+.tarifbaslik {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+.tarifbaslik h1 {
+    color: #363958;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.tarif-wrap {
+    padding: 20px 0;
+    overflow: hidden;
+    display: flex;
+}
+
+.tarif-box {
+    width: 25%;
+    padding: 2%;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.6) 0 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0 2px 4px -1px;
+    margin-left: 25px;
+    margin-right: 35px;
+}
+
+.tarif-box img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.tarif-box h2 {
+    margin: 15px 0;
+}
+
+.tarif-box p {
+    width: 100%;
+    text-align: justify;
+}
+
+.blogyazilari{
+    background-color: #ededed;
+}
+
+.blogbaslik{
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+.blogbaslik h1{
+    color: #363958;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.blog-wrap{
+    padding: 20px 0;
+    overflow: hidden;
+    display: flex;
+}
+
+.blog-box{
+    width: 25%;
+    padding: 2%;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.6) 0 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0 2px 4px -1px;
+    margin-left: 25px;
+    margin-right: 35px;
+}
+
+.blog-box h1{
+    margin: 15px 0;
+}
+
+.blog-box p{
+    width: 100%;
+    text-align: justify;
+}
+
+
+footer {
+    background-color: #222;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+footer h1 {
+    color: #f83b3b;
+    margin-bottom: 2rem;
+    font-family: "Berkshire Swash", cursive;
+}
+
+footer h1 span {
+    color: #666;
+}
+
+footer p {
+    color: #888;
+    margin-bottom: 4rem;
+}
+
+footer span {
+    color: #999;
+}
+
+.iletisim h2{
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+.iletisim {
+    width: 400px; 
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: rgba(0, 0, 0, 0.8) 0 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0 2px 4px -1px;
+ }
+
+ .iletisim2 {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+    width: 200vh; 
+}
+
+.giris input {
+    font-size: 20px;
+    width: 100%;
+    padding: 0px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+      
+}
+
+.giris button {
+    width: 100%;
+    padding: 15px;
+    background-color: #363958;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+ }
+
+ .giris button:hover {
+    background-color: #666;
+ }
+
+ .kayit input {
+    width: 100%;
+    padding: 0px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+ }
+
+ .kayit button {
+    width: 100%;
+    padding: 15px;
+    background-color: #363958;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+ }
+
+ .kayit button:hover {
+    background-color: #666;
+ }
+ 

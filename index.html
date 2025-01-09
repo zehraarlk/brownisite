@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3956/3956164.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Poppins:wght@300;500;700;900&display=swap"
+    rel="stylesheet">
+    <title>Bol Çikolatalı Browni</title>
+</head>
+<body>
+
+    <div id="welcomeMessage" class="message-box"></div>
+<script>
+     
+     function showWelcomeMessage() {
+        const welcomeMessage = "Hoş geldiniz! Orman Meyveli Browni'nin eşsiz lezzetini keşfetmeye hazır mısınız?";
+        const messageElement = document.getElementById('welcomeMessage');
+        let i = 0;
+        function typeMessage() {
+            if (i < welcomeMessage.length) {
+                messageElement.innerHTML += welcomeMessage.charAt(i);
+                i++;
+                setTimeout(typeMessage, 50); 
+            }
+        }
+        typeMessage();
+    }
+    window.onload = showWelcomeMessage;
+</script>
+    <header>
+        <div class="container">
+            <div class="genelbaslik">
+                <div class="logo">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3956/3956164.png" alt=""> <span>Brooowwnie</span>
+                </div>
+                <nav class="menu-box">
+                    <ul>
+                        <li><a href="anasayfa.html" target="_blank">Anasayfa</a></li>
+                        <li><a href="hakkimizda.html" target="_blank">Hakkımızda</a></li>
+                        <li><a href="proje.html" target="_blank">Projelerimiz</a></li>
+                        <li><a href="blog.html" target="_blank">Blog</a></li>
+                        <li><a href="iletisim.html" target="_blank">İletişim</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="girisbolum">
+      <div class="giris2">
+          <div class="intro-wrap">
+              <div class="girisbaslik">
+                    <h1>Haftanın Yıldızı:Orman Meyveli Browni!</h1>
+                   <video src="WhatsApp Video 2025-01-09 saat 16.17.19_0f2ee021.mp4" width="600px" height="600px" controls></video>
+                   <p class="videop">Önce restoranımızda bu eşsiz lezzeti tadın, sonrasında kendi mutfağınızda denemek için tarifimizi izleyin! Tarifi denedikten sonra değerli yorumlarınızı paylaşmayı unutmayın. Mutlu haftalar ♡</p>
+                  </div>
+             </div>
+          </div>
+        </section>
+      <footer>
+        <span> &copy; 2024 Tüm hakları sınırlıdır</span>
+      </footer>
+</body>
+</html>
